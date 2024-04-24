@@ -76,6 +76,36 @@ $ ./sapbrute.py -h
 
 ```
 
+### Usage ###
+
+```bash
+usage: sapbrute.py [-h] [--login-url LOGIN_URL] [--referer-url REFERER_URL]
+                   [--max-concurrency MAX_CONCURRENCY] [--http-proxy HTTP_PROXY]
+                   [--disable-ssl-verification]
+                   usernames_file passwords_file client_ids_file token_url
+
+SAP password spraying tool
+
+positional arguments:
+  usernames_file        File containing usernames
+  passwords_file        File containing passwords
+  client_ids_file       File containing client IDs
+  token_url             URL to obtain the anti-CSRF token
+
+options:
+  -h, --help            show this help message and exit
+  --login-url LOGIN_URL
+                        URL for the login attempt (default: same as token URL)
+  --referer-url REFERER_URL
+                        Referer URL for the login attempt (default: same as token URL)
+  --max-concurrency MAX_CONCURRENCY
+                        Maximum number of concurrent tasks (default: 10)
+  --http-proxy HTTP_PROXY
+                        HTTP proxy to use for requests (e.g., http://proxy.example.com:8080)
+  --disable-ssl-verification
+                        Disable SSL certificate verification
+```
+
 ## :memo: License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
