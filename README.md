@@ -18,7 +18,6 @@
 
 <!-- Status -->
 
-
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -36,8 +35,9 @@
 A simple tool to assess credential strength of SAP systems.
 
 Tested systems:
-  - SAP Fiori
-  - SAP NetWeaver
+
+- SAP Fiori
+- SAP NetWeaver
 
 *This tool is intended for legal purposes only. Users are responsible for ensuring that their use of this tool complies with all applicable laws and regulations.*
 
@@ -106,10 +106,22 @@ options:
                         Disable SSL certificate verification
 ```
 
+### Tips ###
+
+With a valid credential, you may want to check if you have access to one or
+more of the following operations:
+
+- **SU01** - To create and maintain the users
+- **SU01D** - To Display Users
+- **SU10** - For mass maintenance
+- **SU02** - For Manual creation of profiles
+- **SM19** - Security audit - configuration
+- **SE84** - Information System for SAP R/3 Authorizations
+- **SM69** - To display/change external commands (RCE)
+
 ## :memo: License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
 
 Made with :heart: by <a href="https://github.com/y0k4i-1337" target="_blank">y0k4i</a>
 
